@@ -5,7 +5,7 @@ This repository contains the Python code used for the response surface analyses 
 ## Files
 
 - `rsa_analysis.py` - complete RSA analysis and contour-plot code.
-- `merged_data9.csv` - analysis dataset **not included here**. Place the data file in the same directory as the script if it can be shared under the study's data-governance and ethics requirements.
+- `data.csv` - analysis dataset **not included here**. Place the data file in the same directory as the script if it can be shared under the study's data-governance and ethics requirements.
 - `rsa_output/` - created automatically when the script is run.
 
 ## Analysis
