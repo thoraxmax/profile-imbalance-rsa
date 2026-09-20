@@ -29,7 +29,7 @@ import matplotlib.pyplot as plt
 # -----------------------------------------------------------------------------
 # Settings
 # -----------------------------------------------------------------------------
-DATA_FILE = Path("merged_data9.csv")
+DATA_FILE = Path("data.csv")
 OUTPUT_DIR = Path("rsa_output")
 OUTPUT_DIR.mkdir(exist_ok=True)
 
