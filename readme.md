@@ -4,17 +4,17 @@ This repository contains the R and Python code used for the statistical analyses
 
 ## Psychometric Analysis
 
-`psychometric_analysis.R` contains the psychometric analyses of the HiPIC, BESSI, and E-SWAN-G measures.
+`psychometric_analysis.R` contains the psychometric analyses used to evaluate the measurement properties of the study measures.
 
-The script evaluates the proposed factor structures using confirmatory factor analysis (CFA), including examination of model fit and theoretically motivated model refinements. For BESSI and E-SWAN-G, alternative higher-order factor structures are also evaluated. For E-SWAN-G, additional exploratory factor analysis and bifactor models are examined.
+The script evaluates proposed factor structures using confirmatory factor analysis (CFA), including examination of model fit and theoretically motivated model refinements. Alternative higher-order factor structures are also evaluated where applicable, alongside exploratory factor analysis and bifactor models.
 
-The script also assesses internal consistency and test–retest reliability and constructs the final scale scores used in the subsequent analyses.
+Internal consistency and test–retest reliability are assessed, and the final scale scores used in subsequent analyses are constructed.
 
 The analyses were conducted in R using packages including `lavaan`, `semTools`, `psych`, and `dplyr`.
 
 ## Response Surface Analysis
 
-`rsa_analysis.py` contains the Response Surface Analysis (RSA) used to examine whether within-person alignment and imbalance between characteristics are associated with depression and anxiety symptoms (RCADS).
+`rsa_analysis.py` contains the Response Surface Analysis (RSA) used to examine associations between within-person profile alignment and imbalance and the study outcome.
 
 For each eligible pair of indicators, the script estimates a polynomial regression model and derives the standard RSA surface parameters:
 
@@ -25,7 +25,7 @@ For each eligible pair of indicators, the script estimates a polynomial regressi
 
 Polynomial models are compared with corresponding linear models using nested-model F tests. Age and sex are included as covariates, and continuous variables are standardized before analysis. Pairwise comparisons are restricted to indicators within the same measurement framework and across domains.
 
-The script additionally generates contour plots for visualization of the response surfaces and saves the numerical RSA results to `rsa_output/`.
+The script also generates contour plots of the response surfaces and saves the numerical results to `rsa_output/`.
 
 The RSA was conducted in Python 3.10.20 using `pandas`, `NumPy`, `SciPy`, `statsmodels`, and `Matplotlib`.
 
