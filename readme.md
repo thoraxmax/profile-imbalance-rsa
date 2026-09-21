@@ -1,3 +1,19 @@
+# Psychometric Analysis
+
+This directory contains the R code used to evaluate the psychometric properties of the HiPIC, BESSI, and E-SWAN-G measures used in the study.
+
+The analyses include confirmatory factor analysis (CFA), evaluation and refinement of factor structures, internal consistency analyses, and test–retest reliability. For E-SWAN-G, exploratory factor analysis and alternative higher-order and bifactor structures were also examined.
+
+The script additionally constructs the final scale scores used in the subsequent analyses.
+
+## Files
+
+* `psychometric_analysis.R` — psychometric analyses and construction of the final scale scores.
+
+## Software
+
+Analyses were conducted in R using packages including `lavaan`, `semTools`, `psych`, and `dplyr`.
+
 # Response Surface Analysis (RSA)
 
 This repository contains the Python code used for the response surface analyses reported in the manuscript. The analysis was conducted in **Python 3.10.20**.
