@@ -5,8 +5,6 @@ library(dplyr)
 library(magrittr)
 library(psych)
 
-setwd("/Users/ma8505ce/Desktop/Artiklar/BESSI/Artikel 0 - allt i ett")
-
 order<-c("chisq.scaled","df.scaled","pvalue.scaled",
          "rmsea.scaled", "cfi.scaled","srmr")
 
